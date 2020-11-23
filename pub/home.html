@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png" alt="logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResposive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./documentation.html">Documentation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">At-Headings.js</h1>
+        </div>
+
+        <hr />
+        <div class="col-12">
+          <p class="lead">
+            The best animation library that you need for dynamic and vibrant
+            Headings. Gone are the days when you use plain h1,h2 tags and just
+            color it to have a boring headings.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <!-- <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-code"></i>
+          <h3></h3>
+        </div> -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fa fa-spinner fa-pulse spinner"></i>
+
+          <h3>Animaitons</h3>
+          <p>
+            There are a variety of animations including animated headings, lots
+            of customization options such as speed, color, size, shape,
+            animation effects such as slant heading, scatter and Comeback,
+            transform headings,and obviously the basic display on the native
+            canvas.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <i class="fas fa-image image"></i>
+          <h3>Backgrounds</h3>
+          <p>
+            The library also provides a variety of cool and animated background
+            which have different particles and many different behaviours that
+            can be mix-matched together to create a fully customizable canvas
+            background specific for your website.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <i class="far fa-dot-circle circle"></i>
+          <h3>Mouse Trail Effects</h3>
+          <p>
+            Another special functionality is the use of special mouse pointer
+            animations which can be used during presentations and other
+            meetings. Most of the functionalities have been achieved via DOM
+            manipulation and the developer has full freedom to customize any
+            part of the API.
+          </p>
+        </div>
+      </div>
+      <hr class="my-4" />
+    </div>
+
+    <h1>This is one of the most interesting background!</h1>
+    <div id="canvas-parent-div">
+      <canvas id="canvas6" width="1250" height="600" style="background: black;">
+      </canvas>
+      <div class="inputs">
+        <h4>Select your custom inputs below:</h4>
+        <label for="pipesTitle">Enter the heading:</label>
+        <input
+          id="pipesTitle"
+          type="text"
+          value="pipesTitle"
+          for="pipesTitle"
+        />
+        <br />
+        <label for="colorHeading">Select the color of the Heading:</label>
+        <input
+          id="colorHeading"
+          type="color"
+          value="#0ab5e4"
+          for="colorHeading"
+        />
+        <br />
+        <label for="sizeHeading">Select the size of the Heading:</label>
+        <input
+          id="sizeHeading"
+          type="range"
+          min="3"
+          max="400"
+          for="sizeHeading"
+        />
+        <br />
+
+        <label for="colorPipes"
+          >Select the color(r,g,b)=(0,120,240,360) of the Pipes:</label
+        >
+
+        <input
+          id="colorPipes"
+          type="range"
+          min="0"
+          max="360"
+          for="colorPipes"
+        /><br />
+        <label for="widthPipes">Select the width of the pipes:</label>
+
+        <input
+          id="widthPipes"
+          type="range"
+          min="3"
+          max="20"
+          for="widthPipes"
+        /><br />
+
+        <p>
+          There are other options available to the developer such as keeping
+          some of the old pipes and changing the speed of the pipes.
+        </p>
+        <button class="btn" id="pipes">Display</button>
+      </div>
+    </div>
+
+    <div class="background">
+      <h1>Rotating background animations!</h1>
+      <canvas
+        id="canvas3"
+        width="1250"
+        height="600"
+        style="background: black;"
+      ></canvas>
+      <div class="inputs">
+        <h4>Select your custom inputs below:</h4>
+        <label for="boxLength">Enter the maximum box lengths required:</label>
+        <input type="range" min="3" max="40" id="boxLength" />
+        <br />
+        <label for="boxColor"
+          >Select the color(0,120,240,360) of the boxes:</label
+        >
+        <input type="range" id="boxColor" min="0" max="360" for="boxColor" />
+        <br />
+        <label for="boxColorCloseness"
+          >Select the color closeness(0,50) for how close you want your color to
+          be 0 - very close 50- wide variety for the boxes:</label
+        >
+        <input
+          type="range"
+          id="boxColorCloseness"
+          min="0"
+          max="50"
+          for="boxColorCloseness"
+        />
+        <br />
+        <p>
+          There are also other options such as displaying other shapes changing
+          the direction of spin! The develper can also apply background on top
+          of each other as shown above or apply single different animations
+        </p>
+        <button class="btn" id="startBackground">Display</button>
+      </div>
+    </div>
+
+    <div class="background2">
+      <canvas
+        id="canvas4"
+        width="1250"
+        height="600"
+        style="background: lightblue;"
+      ></canvas>
+      <div class="inputs">
+        <ol>
+          <li>
+            This animation also has a variety of options like different color,
+            closeness, shape, lineWidth, mouse reactivity which the devloper can
+            customize. A presest setting is shown above.
+          </li>
+          <li>
+            The button is for the mouse reactive option in which the user can
+            hover the mouse on the canvas and particles that are close enought
+            to the mouse threshold specified will try to dodge and run away from
+            the mouse.
+          </li>
+        </ol>
+
+        <button class="btn" id="backGroundRandom">Display background2</button>
+        <button class="btn" id="backGroundRandomMouse">
+          Display background2 mouse reactive
+        </button>
+        <br />
+      </div>
+    </div>
+    <div class="mouse">
+      <h4>Mouse Trail Options</h4>
+      <canvas
+        id="canvas5"
+        width="1250"
+        height="600"
+        style="background: lightblue;"
+      ></canvas>
+      <div class="inputs">
+        <p>
+          In this one wait for the animation to finish and then hover your mouse
+          over the canvas to see the effect. The developer can customize the
+          size, shape, color of the particles as he wants.
+        </p>
+
+        <button class="btn" id="mouseTrail1">Mouse move effect 1</button>
+      </div>
+
+      <div id="rainbow"></div>
+      <div class="inputs">
+        <p>
+          In the second on it creates a rainbow type effect using only pure dom
+          manipulation and changing their positions and drawing and removing the
+          rainbow boxes!
+        </p>
+
+        <button class="btn" id="mouseTrail2">Mouse move effect 2</button>
+      </div>
+    </div>
+    <canvas
+      id="canvas"
+      width="1250"
+      height="300"
+      style="background: lightblue;"
+    ></canvas>
+
+    <div class="description">
+      <h1>
+        PARTICLES SECTION
+      </h1>
+
+      <div class="inp">
+        <h3>Enter the heading that you want to be displayed!</h3>
+        <label for="text-enter"></label>
+        <input
+          id="heading-enter"
+          type="text"
+          value="enterHeading"
+          for="text-enter"
+        /><button id="submit" class="btn">Submit</button>
+        <button id="submit-basic" class="btn">Submit-Basic-Heading</button>
+        <div class="inputs">
+          <h3>How to use this section properly:</h3>
+        </div>
+        <ol>
+          <li>
+            <p>
+              Please don't enter any other character other than A-Z or a-z as
+              the library currently only supports alphabets.
+            </p>
+          </li>
+          <li>
+            <p>
+              Only slant animation can be stopped as it is a infinite animation.
+              Click on stop animation to stop it and then clear canvas to try
+              some other animation. Other animations are timed which can be
+              specified by the developer and thus can't be stopped in the middle
+              .
+            </p>
+          </li>
+          <li>
+            After clicking on the fleeSingle animation hover your mouse over the
+            heading to see the visual effect.
+          </li>
+          <li>
+            After clicking on the fleeAll animation hover the mouse over the
+            first letter of the heading to see all the characters flee away from
+            the mouse in harmony.
+          </li>
+          <li>
+            The change color and change size option once clicked doesn't show
+            anything but the size and colors are updated and on the subsequent
+            animation these settings will be applied. Try out a animation after
+            selecting these options.
+          </li>
+        </ol>
+      </div>
+      <div class="btns">
+        <button id="btn1" class="btn">Slant Animation</button>
+        <button id="btn3" class="btn">Scatter and Comeback</button>
+        <button id="btn4" class="btn">Change Color</button>
+        <button id="btn5" class="btn">Change Size</button>
+        <button id="btn6" class="btn">Stop Animation</button>
+        <button id="btn7" class="btn">FleeSingle</button>
+        <button id="btn9" class="btn">FleeAll</button>
+        <button id="btn8" class="btn">Clear Canvas</button>
+      </div>
+    </div>
+
+    <div class="basicanimtions">
+      <h3>Here are some of the basic animations available</h3>
+      <div class="disp-area">
+        <h1 id="heading-display">Heading here</h1>
+      </div>
+      <label for="basic-animation-enter"></label>
+      <input
+        id="basic-animation-enter"
+        type="text"
+        value="basic-animation-enter"
+        for="basic-animation-enter"
+      />
+      <!-- <button id="submit-basic-fade" class="btn">Submit</button> -->
+
+      <button id="submit-basic-dynamic" class="btn">Submit</button>
+    </div>
+
+    <div class="tranform">
+      <canvas
+        id="canvas2"
+        width="1250"
+        height="300"
+        style="background: lightblue;"
+      ></canvas>
+      <h3>Transform one heading into another heading.</h3>
+      <label for="basic-animation-enter"></label>
+      <input
+        id="heading1"
+        type="text"
+        value="first"
+        for="basic-animation-enter"
+      />
+      <label for="heading2"></label>
+      <input id="heading2" type="text" value="second" for="heading2" />
+      <button id="submit-transform" class="btn">Submit</button>
+    </div>
+
+    <div class="inputs">
+      <h2 class="center">Painting application</h2>
+
+      <a href="paint.html"><i class="fa fa-paint-brush brush"></i></a>
+    </div>
+
+    <div class="footer">
+      <hr />
+      <h5>&copy; AT-Headings.js</h5>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/AT-headings.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="./js/examples.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </body>
+</html>

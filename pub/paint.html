@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Paint App</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="paint">
+      <canvas
+        id="canvas"
+        width="1250"
+        height="500"
+        style="background: lightblue;"
+      ></canvas>
+      <h3>
+        This is a mini drawing/painting app on which simple figures/explanations
+        can be drawn! Click the button below to start.
+      </h3>
+      <label for="text-size">Select the size of the brush:</label>
+      <input
+        type="range"
+        min="1"
+        ,
+        max="20"
+        id="text-size"
+        ,
+        value="1"
+        ,
+        for="text-size"
+      />
+      <br />
+      <label for="color">Select the colour:</label>
+      <input type="color" name="color" id="color" for="color" />
+      <br />
+      <button id="draw-btn" class="btn">Try it!</button>
+      <button id="clear-btn" class="btn">Clear Painting</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/AT-headings.js"></script>
+    <script src="./js/atom-motion.js"></script>
+    <script src="./js/paint.js"></script>
+  </body>
+</html>

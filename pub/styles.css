@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+canvas {
+  width: 100%;
+}
+.heading {
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+.footer,
+.features,
+.description,
+.basicanimtions,
+.tranform,
+.paint {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  background-color: cornflowerblue;
+}
+
+.btns {
+  margin: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.btn {
+  border: 2px solid #563d7c;
+  background-color: #7cf39f;
+  text-shadow: darkgray;
+  width: auto;
+  height: 50px;
+  border-radius: 20%;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: #158135;
+}
+
+#type1 {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.fade {
+  opacity: 1;
+}
+
+span {
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translateY(50px);
+  display: inline-block;
+}
+
+.dynamic {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#rainbow {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.welcome {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 65%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  align-content: center;
+}
+.display-4 {
+  font-size: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-shadow: 3px 3px grey;
+}
+.lead {
+  text-align: center;
+  margin: 40px;
+}
+
+.spinner {
+  font-size: 6rem;
+  margin: 1rem;
+  color: green;
+}
+.image {
+  font-size: 6rem;
+  margin: 1rem;
+  color: blue;
+}
+.circle {
+  font-size: 6rem;
+  margin: 1rem;
+  color: red;
+}
+label {
+  margin: 10px;
+  text-decoration: underline;
+}
+
+h4 {
+  text-align: center;
+}
+.inputs {
+  background-color: lightcoral;
+}
+.center {
+  text-align: center;
+}
+.brush {
+  font-size: 6rem;
+  margin: 1rem;
+  color: blue;
+  margin-top: 50px;
+  margin-left: 550px;
+  border: 3px solid grey;
+}
+.brush:hover {
+  background-color: lightskyblue;
+}

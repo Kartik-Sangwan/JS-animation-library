@@ -1,0 +1,20 @@
+html {
+  margin: 30px;
+  padding: 20px;
+}
+h3,
+img,
+p {
+  margin: 10px;
+}
+
+hr {
+  width: 80%;
+  color: azure;
+  height: 10px;
+}
+
+h3 {
+  margin: 10px;
+  background-color: lightgrey;
+}
